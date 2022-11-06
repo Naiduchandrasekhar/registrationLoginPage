@@ -1,0 +1,120 @@
+/* Write your CSS code here */
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  padding-bottom: 18px;
+  color: #ea580c;
+  font-size: 35px;
+  font-family: 'Roboto';
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, aqua, lightgreen, lightBlue);
+}
+
+@media screen and (min-width: 768px) {
+  .registrationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    padding: 12px;
+    min-height: 250px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .registrationContainer {
+    padding: 30px;
+    height: 250px;
+    width: 400px;
+  }
+  .buttonContainer {
+    width: 100%;
+  }
+  .submitBtn {
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #ea580c;
+    color: #ffffff;
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    padding: 8px;
+    width: 100%;
+    font-family: 'Roboto';
+  }
+}
+
+.inputTexts {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  outline: none;
+  padding: 4px;
+  min-width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .submitBtn {
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #ea580c;
+    color: #ffffff;
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    padding: 5px;
+    width: 65px;
+    font-family: 'Roboto';
+  }
+}
+
+.errorMsg {
+  color: red;
+}
+
+.successCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageTick {
+  margin-bottom: 10px;
+}
+
+.para {
+  margin-bottom: 10px;
+}
+
+.resubmitSuccess {
+  background-color: #ea580c;
+  color: #ffffff;
+  border: none;
+  padding: 6px;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.inputError {
+  border-color: red;
+  background-color: pink;
+}
